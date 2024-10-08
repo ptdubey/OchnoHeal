@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./Navbar.css"; // Import the CSS file for styling
+import "./navbar.css"; // Import the CSS file for styling
+import { profileImage } from "../../assets/imageIndex.js";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar = () => {
       </ul>
 
       <div className="navbar-profile">
-        <img src="/public/user.png" className="profile-pic" />
+        <img src={profileImage} className="profile-pic" />
         <button className="book-now-btn">Book Now</button>
       </div>
     </nav>

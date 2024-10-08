@@ -1,4 +1,5 @@
 import "./Middle.css";
+
 function Middle() {
   return (
     <div className="App">
