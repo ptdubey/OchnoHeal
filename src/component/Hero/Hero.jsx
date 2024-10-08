@@ -1,6 +1,6 @@
 import "./Hero.css";
-import { Consultent } from "../../assets/imageIndex.js";
-import { Doctor } from "../../assets/imageIndex.js";
+import { Consultent } from "../../assets/ImageIndex.js";
+import { Doctor } from "../../assets/ImageIndex.js";
 const Hero = () => {
   return (
     <section className="dental-experience">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./navbar.css"; // Import the CSS file for styling
-import { profileImage } from "../../assets/imageIndex.js";
+import { profileImage } from "../../assets/ImageIndex.js";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
