@@ -1,6 +1,5 @@
 import "./Hero.css";
-import { Consultent } from "../../assets/ImageIndex.js";
-import { Doctor } from "../../assets/ImageIndex.js";
+
 const Hero = () => {
   return (
     <section className="dental-experience">
@@ -21,7 +20,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="testimonial">
-          <img src={Consultent} className="testimonial-img" />
+          <img
+            src={
+              "https://res.cloudinary.com/dhykxy8c3/image/upload/v1728406243/gzfvsu9fakbjwvyljufg.png"
+            }
+            className="testimonial-img"
+          />
           <div className="testimonial-text">
             <span>Thomas Daniel</span>
             <p>
@@ -32,7 +36,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="right-content">
-        <img src={Doctor} alt="" />
+        <img
+          src={
+            "https://res.cloudinary.com/dhykxy8c3/image/upload/v1728402636/omd3vdb0a0ybl79oyupq.png"
+          }
+          alt=""
+        />
       </div>
     </section>
   );
