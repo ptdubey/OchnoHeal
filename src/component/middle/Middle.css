@@ -5,9 +5,10 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-.App {
+.container {
   width: 100%;
-  max-width: 1200px;
+  max-height: 100vh;
+  max-width: 1300px;
   padding: 20px;
 }
 /* Treatment Cards Section */
@@ -50,51 +51,6 @@ body {
   background-color: #003fbf;
 }
 
-/* Welcome Section */
-.welcome-section {
-  text-align: center;
-  background-color: #e6f3ff;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.welcome-section h2 {
-  color: #0057ff;
-  margin-bottom: 20px;
-}
-
-.welcome-section p {
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-phone {
-  padding: 10px;
-  border: 1px solid #0057ff;
-  border-radius: 5px;
-  margin-right: 10px;
-  width: 250px;
-}
-
-.submit-btn {
-  background-color: #0057ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #003fbf;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .treatment-section {
     flex-direction: column;
@@ -104,17 +60,10 @@ form {
   .treatment-card {
     width: 100%;
   }
-
-  .input-phone {
-    width: 200px;
-  }
 }
 
 @media (max-width: 480px) {
-  .App {
+  .container {
     margin-top: 20px;
-  }
-  .input-phone {
-    width: 150px;
   }
 }

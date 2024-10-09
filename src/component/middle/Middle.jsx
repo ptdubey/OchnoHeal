@@ -1,8 +1,9 @@
+import PatientSection from "../WelcomeSection/PatientSection";
 import "./Middle.css";
 
 function Middle() {
   return (
-    <div className="App">
+    <div className="container">
       <section className="treatment-section">
         <div className="treatment-card">
           <h3>Root Canal Treatment</h3>
@@ -28,25 +29,7 @@ function Middle() {
           </p>
           <button>Learn More</button>
         </div>
-      </section>
-
-      <section className="welcome-section">
-        <h2>We’re Welcoming New Patients And Can’t Wait To Meet You.</h2>
-        <p>
-          We use only the best quality materials on the market in order to
-          provide the best products to our patients. So don’t worry about
-          anything and book yourself.
-        </p>
-        <form>
-          <input
-            type="text"
-            placeholder="Enter your Phone Number"
-            className="input-phone"
-          />
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
-        </form>
+        <PatientSection />
       </section>
     </div>
   );

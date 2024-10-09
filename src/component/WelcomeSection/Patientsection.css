@@ -1,0 +1,117 @@
+/* src/components/NewPatientsSection.css */
+
+.new-patients-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  top: 0;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 2rem;
+}
+
+.content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  margin-bottom: 2rem;
+}
+
+.phone-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phone-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.phone-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.phone-form button:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 50vh;
+  border-radius: 10px;
+  max-height: 50vh;
+  box-shadow: 7px 12px 3px rgb(52, 48, 48);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .new-patients-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .phone-form {
+    flex-direction: column;
+  }
+
+  .phone-form input,
+  .phone-form button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .phone-form button {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+  .image-container img {
+    max-height: 35vh;
+  }
+}
